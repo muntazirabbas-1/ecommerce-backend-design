@@ -3,71 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ModernShop - Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Amazon.com. Spend less. Smile more.</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="/" class="logo">ModernShop.</a>
-            <nav class="nav-links">
-                <a href="/">Home</a>
-                <a href="/products">Products</a>
-                <a href="#about">About</a>
-                <a href="#contact" class="btn btn-outline">Contact Us</a>
-            </nav>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <header>
+        <div class="nav-main">
+            <a href="/" class="nav-logo">amazon</a>
+            <div class="nav-tool-item">
+                <span class="line-1">Deliver to</span>
+                <span class="line-2">Select your address</span>
+            </div>
+            <div class="nav-search">
+                <select><option>All</option><option>Electronics</option></select>
+                <input type="text" placeholder="Search Amazon">
+                <button aria-label="Search">🔍</button>
+            </div>
+            <div class="nav-tools">
+                <div class="nav-tool-item">
+                    <span class="line-1">Hello, sign in</span>
+                    <span class="line-2">Account & Lists</span>
+                </div>
+                <div class="nav-tool-item">
+                    <span class="line-1">Returns</span>
+                    <span class="line-2">& Orders</span>
+                </div>
+                <div class="nav-cart nav-tool-item">
+                    🛒 Cart
+                </div>
+            </div>
+        </div>
+        <div class="nav-sub">
+            <a href="#">☰ All</a>
+            <a href="/products">Today's Deals</a>
+            <a href="/products">Customer Service</a>
+            <a href="/products">Registry</a>
+            <a href="/products">Gift Cards</a>
+            <a href="/products">Sell</a>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h1>Elevate Your Lifestyle</h1>
-                    <p>Discover our curated collection of premium products designed for modern living. Quality meets aesthetics.</p>
-                    <a href="/products" class="btn btn-primary hero-btn">Shop Now</a>
+    <main class="container">
+        <div class="hero-banner"></div>
+        
+        <div class="home-content">
+            <div class="category-row">
+                <div class="category-card">
+                    <h2>Gaming accessories</h2>
+                    <div class="grid-4">
+                        <div class="grid-item">
+                            <div class="img-placeholder" style="background: #e2e8f0;"></div>
+                            <span>Headsets</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-placeholder" style="background: #cbd5e1;"></div>
+                            <span>Keyboards</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-placeholder" style="background: #94a3b8;"></div>
+                            <span>Mice</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-placeholder" style="background: #64748b;"></div>
+                            <span>Chairs</span>
+                        </div>
+                    </div>
+                    <a href="/products">See more</a>
                 </div>
-                <!-- Simulating a dynamic image with CSS gradient for reliability, can be replaced by real image in assets -->
-                <div class="hero-image-placeholder">
-                     <div class="glass-card">
-                         <h3>New Arrival</h3>
-                         <p>Smart Home Hub v2</p>
-                     </div>
+
+                <div class="category-card">
+                    <h2>Shop deals in Fashion</h2>
+                    <div class="grid-4">
+                        <div class="grid-item">
+                            <div class="img-placeholder" style="background: #ffe4e6;"></div>
+                            <span>Jeans</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-placeholder" style="background: #fecdd3;"></div>
+                            <span>Tops</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-placeholder" style="background: #fda4af;"></div>
+                            <span>Dresses</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-placeholder" style="background: #fb7185;"></div>
+                            <span>Shoes</span>
+                        </div>
+                    </div>
+                    <a href="/products">See all deals</a>
+                </div>
+
+                <div class="category-card">
+                    <h2>Refresh your space</h2>
+                    <div class="grid-4">
+                        <div class="grid-item">
+                            <div class="img-placeholder" style="background: #ecfccb;"></div>
+                            <span>Dining</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-placeholder" style="background: #d9f99d;"></div>
+                            <span>Home</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-placeholder" style="background: #bef264;"></div>
+                            <span>Kitchen</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-placeholder" style="background: #a3e635;"></div>
+                            <span>Health</span>
+                        </div>
+                    </div>
+                    <a href="/products">See more</a>
+                </div>
+
+                <div class="category-card" style="display: flex; flex-direction: column;">
+                    <h2>Deals in PCs</h2>
+                    <div class="img-placeholder" style="flex-grow: 1; background: #e0f2fe; margin-bottom: 15px;"></div>
+                    <a href="/products">Shop now</a>
                 </div>
             </div>
-        </section>
-
-        <section class="featured-categories container section-padding">
-             <h2 class="section-title">Shop by Category</h2>
-             <div class="category-grid">
-                 <div class="category-card" style="background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);">
-                     <h3>Electronics</h3>
-                     <a href="/products">Explore</a>
-                 </div>
-                 <div class="category-card" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);">
-                     <h3>Apparel</h3>
-                     <a href="/products">Explore</a>
-                 </div>
-                 <div class="category-card" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);">
-                     <h3>Home Goods</h3>
-                     <a href="/products">Explore</a>
-                 </div>
-             </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="footer">
-        <div class="container text-center">
-            <p>&copy; 2026 ModernShop. All rights reserved.</p>
+    <footer>
+        <div class="footer-top" onclick="window.scrollTo(0,0)">Back to top</div>
+        <div class="footer-main">
+            <div class="footer-col">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Amazon</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell products on Amazon</a></li>
+                    <li><a href="#">Sell on Amazon Business</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#">Amazon and COVID-19</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 1996-2026, Amazon.com, Inc. or its affiliates (Mockup)</p>
         </div>
     </footer>
-
-    <script src="/js/main.js"></script>
 </body>
 </html>

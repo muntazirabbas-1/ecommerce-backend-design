@@ -3,85 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ModernShop - Catalog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Amazon.com : Electronics</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="/" class="logo">ModernShop.</a>
-            <nav class="nav-links">
-                <a href="/">Home</a>
-                <a href="/products" class="active">Products</a>
-                <a href="#about">About</a>
-                <a href="#contact" class="btn btn-outline">Contact Us</a>
-            </nav>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <header>
+        <div class="nav-main">
+            <a href="/" class="nav-logo">amazon</a>
+            <div class="nav-tool-item">
+                <span class="line-1">Deliver to</span>
+                <span class="line-2">Select your address</span>
+            </div>
+            <div class="nav-search">
+                <select><option>Electronics</option><option>All</option></select>
+                <input type="text" placeholder="Search Amazon" value="headphones">
+                <button aria-label="Search">🔍</button>
+            </div>
+            <div class="nav-tools">
+                <div class="nav-tool-item">
+                    <span class="line-1">Hello, sign in</span>
+                    <span class="line-2">Account & Lists</span>
+                </div>
+                <div class="nav-tool-item">
+                    <span class="line-1">Returns</span>
+                    <span class="line-2">& Orders</span>
+                </div>
+                <div class="nav-cart nav-tool-item">
+                    🛒 Cart
+                </div>
+            </div>
+        </div>
+        <div class="nav-sub">
+            <a href="#">☰ All</a>
+            <a href="/products">Today's Deals</a>
+            <a href="/products">Customer Service</a>
+            <a href="/products">Registry</a>
+            <a href="/products">Gift Cards</a>
+            <a href="/products">Sell</a>
         </div>
     </header>
 
-    <main class="container section-padding">
-        <div class="page-header">
-            <h1 class="section-title">All Products</h1>
-            <div class="filters">
-                <select class="filter-select">
-                    <option>Sort by: Featured</option>
-                    <option>Price: Low to High</option>
-                    <option>Price: High to Low</option>
-                </select>
+    <div class="search-results-bar container" style="margin-top: 10px; background: white; border: none; border-bottom: 1px solid #ddd; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+        <span>1-16 of over 1,000 results for <strong>"headphones"</strong></span>
+        <span><select style="padding: 5px; border-radius: 4px; border: 1px solid #ccc;"><option>Sort by: Featured</option><option>Price: Low to High</option></select></span>
+    </div>
+
+    <main class="products-layout container">
+        <aside class="sidebar">
+            <h3>Department</h3>
+            <ul>
+                <li><a href="#"><strong>Any Department</strong></a></li>
+                <li><a href="#">Electronics</a></li>
+                <ul>
+                    <li><a href="#">Headphones</a></li>
+                    <li><a href="#">Earbuds</a></li>
+                </ul>
+            </ul>
+
+            <h3 style="margin-top: 20px;">Customer Reviews</h3>
+            <ul>
+                <li><a href="#">⭐⭐⭐⭐ & Up</a></li>
+                <li><a href="#">⭐⭐⭐ & Up</a></li>
+                <li><a href="#">⭐⭐ & Up</a></li>
+                <li><a href="#">⭐ & Up</a></li>
+            </ul>
+
+            <h3 style="margin-top: 20px;">Price</h3>
+            <ul>
+                <li><a href="#">Under $25</a></li>
+                <li><a href="#">$25 to $50</a></li>
+                <li><a href="#">$50 to $100</a></li>
+                <li><a href="#">$100 to $200</a></li>
+                <li><a href="#">$200 & Above</a></li>
+            </ul>
+        </aside>
+
+        <section class="product-list">
+            <!-- Product Item 1 -->
+            <div class="product-item">
+                <div class="product-item-img" style="background: #f0f4f8;"></div>
+                <div class="product-item-details">
+                    <a href="/products/1" class="product-item-title">
+                        Sony WH-1000XM5 Wireless Noise Canceling Headphones, Black
+                    </a>
+                    <div class="rating">⭐⭐⭐⭐⭐ 14,392</div>
+                    <p style="font-size: 12px; margin-bottom: 5px;">2K+ bought in past month</p>
+                    <div class="price-block">
+                        <span class="price-symbol">$</span><span class="price-whole">348</span><span class="price-fraction">00</span>
+                    </div>
+                    <p style="font-size: 12px; color: #565959;">FREE delivery <strong>Tomorrow</strong></p>
+                    <p style="font-size: 12px; color: #565959;">Ships to your location</p>
+                </div>
             </div>
-        </div>
 
-        <div class="product-grid">
-            <!-- Product 1 -->
-            <a href="/products/1" class="product-card">
-                <div class="product-img" style="background: #f0f4f8;"></div>
-                <div class="product-info">
-                    <h3 class="product-title">Minimalist Wireless Headphones</h3>
-                    <p class="product-price">$149.99</p>
+            <!-- Product Item 2 -->
+            <div class="product-item">
+                <div class="product-item-img" style="background: #e2e8f0;"></div>
+                <div class="product-item-details">
+                    <a href="/products/2" class="product-item-title">
+                        Apple AirPods Pro (2nd Generation) Wireless Earbuds
+                    </a>
+                    <div class="rating">⭐⭐⭐⭐⭐ 42,109</div>
+                    <p style="font-size: 12px; margin-bottom: 5px;">10K+ bought in past month</p>
+                    <div class="price-block">
+                        <span class="price-symbol">$</span><span class="price-whole">189</span><span class="price-fraction">99</span>
+                        <span style="font-size: 12px; text-decoration: line-through; color: #565959; margin-left: 5px;">$249.00</span>
+                    </div>
+                    <p style="font-size: 12px; color: #565959;">FREE delivery <strong>Tomorrow</strong></p>
+                    <p style="font-size: 12px; color: #565959;">Ships to your location</p>
                 </div>
-            </a>
-            
-            <!-- Product 2 -->
-            <a href="/products/2" class="product-card">
-                <div class="product-img" style="background: #e2e8f0;"></div>
-                <div class="product-info">
-                    <h3 class="product-title">Ergonomic Office Chair</h3>
-                    <p class="product-price">$299.00</p>
-                </div>
-            </a>
+            </div>
 
-            <!-- Product 3 -->
-            <a href="/products/3" class="product-card">
-                <div class="product-img" style="background: #cbd5e1;"></div>
-                <div class="product-info">
-                    <h3 class="product-title">Smart Fitness Watch</h3>
-                    <p class="product-price">$199.50</p>
+            <!-- Product Item 3 -->
+            <div class="product-item">
+                <div class="product-item-img" style="background: #cbd5e1;"></div>
+                <div class="product-item-details">
+                    <a href="/products/3" class="product-item-title">
+                        Bose QuietComfort 45 Bluetooth Wireless Noise Canceling Headphones
+                    </a>
+                    <div class="rating">⭐⭐⭐⭐⭐ 8,920</div>
+                    <div class="price-block">
+                        <span class="price-symbol">$</span><span class="price-whole">279</span><span class="price-fraction">00</span>
+                    </div>
+                    <p style="font-size: 12px; color: #565959;">FREE delivery <strong>Thu, Mar 16</strong></p>
                 </div>
-            </a>
-
-            <!-- Product 4 -->
-            <a href="/products/4" class="product-card">
-                <div class="product-img" style="background: #94a3b8;"></div>
-                <div class="product-info">
-                    <h3 class="product-title">Mechanical Keyboard</h3>
-                    <p class="product-price">$120.00</p>
-                </div>
-            </a>
-        </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer">
-        <div class="container text-center">
-            <p>&copy; 2026 ModernShop. All rights reserved.</p>
+    <footer>
+        <div class="footer-top" onclick="window.scrollTo(0,0)">Back to top</div>
+        <div class="footer-bottom" style="margin-top: 0;">
+            <p>&copy; 1996-2026, Amazon.com, Inc. or its affiliates (Mockup)</p>
         </div>
     </footer>
-
-    <script src="/js/main.js"></script>
 </body>
 </html>
