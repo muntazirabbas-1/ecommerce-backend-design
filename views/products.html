@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernShop - Catalog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">ModernShop.</a>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/products" class="active">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <div class="page-header">
+            <h1 class="section-title">All Products</h1>
+            <div class="filters">
+                <select class="filter-select">
+                    <option>Sort by: Featured</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <a href="/products/1" class="product-card">
+                <div class="product-img" style="background: #f0f4f8;"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Minimalist Wireless Headphones</h3>
+                    <p class="product-price">$149.99</p>
+                </div>
+            </a>
+            
+            <!-- Product 2 -->
+            <a href="/products/2" class="product-card">
+                <div class="product-img" style="background: #e2e8f0;"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Ergonomic Office Chair</h3>
+                    <p class="product-price">$299.00</p>
+                </div>
+            </a>
+
+            <!-- Product 3 -->
+            <a href="/products/3" class="product-card">
+                <div class="product-img" style="background: #cbd5e1;"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Smart Fitness Watch</h3>
+                    <p class="product-price">$199.50</p>
+                </div>
+            </a>
+
+            <!-- Product 4 -->
+            <a href="/products/4" class="product-card">
+                <div class="product-img" style="background: #94a3b8;"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Mechanical Keyboard</h3>
+                    <p class="product-price">$120.00</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 ModernShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

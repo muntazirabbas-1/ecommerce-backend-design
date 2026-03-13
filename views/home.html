@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernShop - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">ModernShop.</a>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Elevate Your Lifestyle</h1>
+                    <p>Discover our curated collection of premium products designed for modern living. Quality meets aesthetics.</p>
+                    <a href="/products" class="btn btn-primary hero-btn">Shop Now</a>
+                </div>
+                <!-- Simulating a dynamic image with CSS gradient for reliability, can be replaced by real image in assets -->
+                <div class="hero-image-placeholder">
+                     <div class="glass-card">
+                         <h3>New Arrival</h3>
+                         <p>Smart Home Hub v2</p>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-categories container section-padding">
+             <h2 class="section-title">Shop by Category</h2>
+             <div class="category-grid">
+                 <div class="category-card" style="background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);">
+                     <h3>Electronics</h3>
+                     <a href="/products">Explore</a>
+                 </div>
+                 <div class="category-card" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);">
+                     <h3>Apparel</h3>
+                     <a href="/products">Explore</a>
+                 </div>
+                 <div class="category-card" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);">
+                     <h3>Home Goods</h3>
+                     <a href="/products">Explore</a>
+                 </div>
+             </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 ModernShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

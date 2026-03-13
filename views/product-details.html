@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Wireless Headphones - ModernShop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">ModernShop.</a>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/products" class="active">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <div class="breadcrumb">
+            <a href="/">Home</a> / <a href="/products">Products</a> / <span>Minimalist Wireless Headphones</span>
+        </div>
+
+        <div class="product-details-container">
+            <div class="product-gallery">
+                <!-- Main Image Placeholder -->
+                <div class="main-image" style="background: #f0f4f8;"></div>
+                <div class="thumbnail-list">
+                    <div class="thumbnail active" style="background: #e2e8f0;"></div>
+                    <div class="thumbnail" style="background: #cbd5e1;"></div>
+                    <div class="thumbnail" style="background: #94a3b8;"></div>
+                </div>
+            </div>
+
+            <div class="product-info-detail">
+                <h1 class="product-title-lg">Minimalist Wireless Headphones</h1>
+                <p class="product-price-lg">$149.99</p>
+                <div class="product-rating">
+                    <span>⭐⭐⭐⭐⭐</span> (124 reviews)
+                </div>
+                
+                <div class="product-description">
+                    <p>Experience crystal-clear audio with our Minimalist Wireless Headphones. Designed for both comfort and style, they feature active noise cancellation, a 30-hour battery life, and a sleek, modern aesthetic that fits perfectly into your daily routine.</p>
+                </div>
+
+                <div class="product-options">
+                    <label for="color">Color:</label>
+                    <select id="color" class="option-select">
+                        <option>Matte Black</option>
+                        <option>Moonlight White</option>
+                        <option>Rose Gold</option>
+                    </select>
+                </div>
+
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button>-</button>
+                        <input type="number" value="1" min="1">
+                        <button>+</button>
+                    </div>
+                    <button class="btn btn-primary btn-lg">Add to Cart</button>
+                </div>
+                
+                <div class="product-meta">
+                    <p><strong>SKU:</strong> MWH-001</p>
+                    <p><strong>Category:</strong> Electronics</p>
+                </div>
+            </div>
+        </div>
+        
+        <section class="related-products">
+            <h2 class="section-title">You Might Also Like</h2>
+            <div class="product-grid">
+                <!-- Mini product cards -->
+                <a href="/products/3" class="product-card">
+                    <div class="product-img" style="background: #cbd5e1; height: 15rem;"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Smart Fitness Watch</h3>
+                        <p class="product-price">$199.50</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 ModernShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
