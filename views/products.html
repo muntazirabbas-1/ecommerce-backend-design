@@ -3,139 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon.com : Electronics</title>
+    <title>Brand - Products</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
-        <div class="nav-main">
-            <a href="/" class="nav-logo">amazon</a>
-            <div class="nav-tool-item">
-                <span class="line-1">Deliver to</span>
-                <span class="line-2">Select your address</span>
-            </div>
-            <div class="nav-search">
-                <select><option>Electronics</option><option>All</option></select>
-                <input type="text" placeholder="Search Amazon" value="headphones">
-                <button aria-label="Search">🔍</button>
-            </div>
-            <div class="nav-tools">
-                <div class="nav-tool-item">
-                    <span class="line-1">Hello, sign in</span>
-                    <span class="line-2">Account & Lists</span>
-                </div>
-                <div class="nav-tool-item">
-                    <span class="line-1">Returns</span>
-                    <span class="line-2">& Orders</span>
-                </div>
-                <div class="nav-cart nav-tool-item">
-                    🛒 Cart
-                </div>
-            </div>
+    <!-- Top Header -->
+    <header class="header-top container d-flex align-items-center justify-content-between">
+        <a href="/" class="logo">
+            <span class="logo-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H18V18H6V6ZM4 4C3.44772 4 3 4.44772 3 5V19C3 19.5523 3.44772 20 4 20H20C20.5523 20 21 19.5523 21 19V5C21 4.44772 20.5523 4 20 4H4ZM9 8H15V10H9V8Z"/></svg></span>
+            Brand
+        </a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <select>
+                <option>All category</option>
+                <option>Electronics</option>
+            </select>
+            <button>Search</button>
         </div>
-        <div class="nav-sub">
-            <a href="#">☰ All</a>
-            <a href="/products">Today's Deals</a>
-            <a href="/products">Customer Service</a>
-            <a href="/products">Registry</a>
-            <a href="/products">Gift Cards</a>
-            <a href="/products">Sell</a>
+        <div class="header-actions">
+            <div class="action-item"><span>👤</span>Profile</div>
+            <div class="action-item"><span>💬</span>Message</div>
+            <div class="action-item"><span>❤️</span>Orders</div>
+            <div class="action-item"><span>🛒</span>My cart</div>
         </div>
     </header>
 
-    <div class="search-results-bar container" style="margin-top: 10px; background: white; border: none; border-bottom: 1px solid #ddd; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
-        <span>1-16 of over 1,000 results for <strong>"headphones"</strong></span>
-        <span><select style="padding: 5px; border-radius: 4px; border: 1px solid #ccc;"><option>Sort by: Featured</option><option>Price: Low to High</option></select></span>
+    <!-- Bottom Header Nav -->
+    <nav class="header-bottom">
+        <div class="container d-flex justify-content-between">
+            <div class="nav-links">
+                <a href="#">☰ All category</a>
+                <a href="#">Hot offers</a>
+                <a href="#">Gift boxes</a>
+                <a href="#">Projects</a>
+                <a href="#">Menu item</a>
+                <a href="#">Help ⌄</a>
+            </div>
+            <div class="nav-utils">
+                <span>English, USD ⌄</span>
+                <span>Ship to 🇩🇪 ⌄</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container breadcrumb">
+        Home > Electronics > Mobile accessory > <strong>Smartphones</strong>
     </div>
 
-    <main class="products-layout container">
+    <!-- Main Layout -->
+    <main class="container page-layout">
+        <!-- Sidebar -->
         <aside class="sidebar">
-            <h3>Department</h3>
-            <ul>
-                <li><a href="#"><strong>Any Department</strong></a></li>
-                <li><a href="#">Electronics</a></li>
-                <ul>
-                    <li><a href="#">Headphones</a></li>
-                    <li><a href="#">Earbuds</a></li>
+            <div class="filter-group">
+                <div class="filter-title">Category <span>^</span></div>
+                <ul class="filter-list">
+                    <li><a href="#">Mobile accessory</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Smartphones</a></li>
+                    <li><a href="#">Modern tech</a></li>
+                    <li><a href="#" class="see-all">See all</a></li>
                 </ul>
-            </ul>
-
-            <h3 style="margin-top: 20px;">Customer Reviews</h3>
-            <ul>
-                <li><a href="#">⭐⭐⭐⭐ & Up</a></li>
-                <li><a href="#">⭐⭐⭐ & Up</a></li>
-                <li><a href="#">⭐⭐ & Up</a></li>
-                <li><a href="#">⭐ & Up</a></li>
-            </ul>
-
-            <h3 style="margin-top: 20px;">Price</h3>
-            <ul>
-                <li><a href="#">Under $25</a></li>
-                <li><a href="#">$25 to $50</a></li>
-                <li><a href="#">$50 to $100</a></li>
-                <li><a href="#">$100 to $200</a></li>
-                <li><a href="#">$200 & Above</a></li>
-            </ul>
+            </div>
+            <div class="filter-group">
+                <div class="filter-title">Brands <span>^</span></div>
+                <ul class="filter-list">
+                    <li><input type="checkbox" class="checkbox" checked> Samsung</li>
+                    <li><input type="checkbox" class="checkbox" checked> Apple</li>
+                    <li><input type="checkbox" class="checkbox"> Huawei</li>
+                    <li><input type="checkbox" class="checkbox" checked> Pocco</li>
+                    <li><input type="checkbox" class="checkbox"> Lenovo</li>
+                    <li><a href="#" class="see-all">See all</a></li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <div class="filter-title">Features <span>^</span></div>
+                <ul class="filter-list">
+                    <li><input type="checkbox" class="checkbox" checked> Metallic</li>
+                    <li><input type="checkbox" class="checkbox"> Plastic cover</li>
+                    <li><input type="checkbox" class="checkbox"> 8GB Ram</li>
+                    <li><input type="checkbox" class="checkbox"> Super power</li>
+                    <li><input type="checkbox" class="checkbox"> Large Memory</li>
+                    <li><a href="#" class="see-all">See all</a></li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <div class="filter-title">Price range <span>⌄</span></div>
+            </div>
+            <div class="filter-group">
+                <div class="filter-title">Condition <span>⌄</span></div>
+            </div>
+            <div class="filter-group">
+                <div class="filter-title">Ratings <span>⌄</span></div>
+            </div>
         </aside>
 
-        <section class="product-list">
-            <!-- Product Item 1 -->
-            <div class="product-item">
-                <div class="product-item-img" style="background: #f0f4f8;"></div>
-                <div class="product-item-details">
-                    <a href="/products/1" class="product-item-title">
-                        Sony WH-1000XM5 Wireless Noise Canceling Headphones, Black
-                    </a>
-                    <div class="rating">⭐⭐⭐⭐⭐ 14,392</div>
-                    <p style="font-size: 12px; margin-bottom: 5px;">2K+ bought in past month</p>
-                    <div class="price-block">
-                        <span class="price-symbol">$</span><span class="price-whole">348</span><span class="price-fraction">00</span>
+        <!-- Right Content -->
+        <div class="main-content">
+            <div class="results-bar">
+                <span>12,911 items in <strong>Mobile accessory</strong></span>
+                <div class="d-flex align-items-center gap-3">
+                    <span><input type="checkbox" class="checkbox"> Verified only</span>
+                    <select style="padding: 5px; border-radius: 4px; border: 1px solid var(--border);"><option>Featured</option></select>
+                    <div style="display: flex; gap: 5px;">
+                        <button class="btn btn-outline" style="padding: 5px 10px;">⊞</button>
+                        <button class="btn btn-outline" style="padding: 5px 10px;">≡</button>
                     </div>
-                    <p style="font-size: 12px; color: #565959;">FREE delivery <strong>Tomorrow</strong></p>
-                    <p style="font-size: 12px; color: #565959;">Ships to your location</p>
                 </div>
             </div>
 
-            <!-- Product Item 2 -->
-            <div class="product-item">
-                <div class="product-item-img" style="background: #e2e8f0;"></div>
-                <div class="product-item-details">
-                    <a href="/products/2" class="product-item-title">
-                        Apple AirPods Pro (2nd Generation) Wireless Earbuds
-                    </a>
-                    <div class="rating">⭐⭐⭐⭐⭐ 42,109</div>
-                    <p style="font-size: 12px; margin-bottom: 5px;">10K+ bought in past month</p>
-                    <div class="price-block">
-                        <span class="price-symbol">$</span><span class="price-whole">189</span><span class="price-fraction">99</span>
-                        <span style="font-size: 12px; text-decoration: line-through; color: #565959; margin-left: 5px;">$249.00</span>
-                    </div>
-                    <p style="font-size: 12px; color: #565959;">FREE delivery <strong>Tomorrow</strong></p>
-                    <p style="font-size: 12px; color: #565959;">Ships to your location</p>
-                </div>
+            <div class="active-filters">
+                <div class="filter-tag">Samsung <span>×</span></div>
+                <div class="filter-tag">Apple <span>×</span></div>
+                <div class="filter-tag">Poco <span>×</span></div>
+                <div class="filter-tag">Metallic <span>×</span></div>
+                <div class="filter-tag">4 star <span>×</span></div>
+                <div class="filter-tag">3 star <span>×</span></div>
+                <a href="#" style="font-size: 13px; align-self: center; margin-left: 10px;">Clear all filter</a>
             </div>
 
-            <!-- Product Item 3 -->
-            <div class="product-item">
-                <div class="product-item-img" style="background: #cbd5e1;"></div>
-                <div class="product-item-details">
-                    <a href="/products/3" class="product-item-title">
-                        Bose QuietComfort 45 Bluetooth Wireless Noise Canceling Headphones
-                    </a>
-                    <div class="rating">⭐⭐⭐⭐⭐ 8,920</div>
-                    <div class="price-block">
-                        <span class="price-symbol">$</span><span class="price-whole">279</span><span class="price-fraction">00</span>
+            <div class="grid-view">
+                <!-- Item 1 -->
+                <div class="grid-item">
+                    <a href="/products/1" class="grid-img"><img src="https://via.placeholder.com/150/ff4d4d/ffffff?text=Phone" alt="Product" style="max-height: 100%;"></a>
+                    <div class="grid-price-row">
+                        <div>
+                            <span class="grid-price">$99.50</span>
+                            <span class="grid-old-price">$1128.00</span>
+                        </div>
+                        <button class="btn-heart">❤️</button>
                     </div>
-                    <p style="font-size: 12px; color: #565959;">FREE delivery <strong>Thu, Mar 16</strong></p>
+                    <div class="grid-rating">⭐⭐⭐⭐⭐ <span style="color: var(--text-gray);">7.5</span></div>
+                    <p class="grid-title">GoPro HERO6 4K Action Camera - Black</p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="grid-item">
+                    <a href="/products/1" class="grid-img"><img src="https://via.placeholder.com/150/003366/ffffff?text=Phone" alt="Product" style="max-height: 100%;"></a>
+                    <div class="grid-price-row">
+                        <div>
+                            <span class="grid-price">$99.50</span>
+                            <span class="grid-old-price">$1128.00</span>
+                        </div>
+                        <button class="btn-heart">❤️</button>
+                    </div>
+                    <div class="grid-rating">⭐⭐⭐⭐⭐ <span style="color: var(--text-gray);">5.9</span></div>
+                    <p class="grid-title">GoPro HERO6 4K Action Camera - Black</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="grid-item">
+                    <a href="/products/1" class="grid-img"><img src="https://via.placeholder.com/150/9933cc/ffffff?text=Phone" alt="Product" style="max-height: 100%;"></a>
+                    <div class="grid-price-row">
+                        <div>
+                            <span class="grid-price">$99.50</span>
+                            <span class="grid-old-price">$1128.00</span>
+                        </div>
+                        <button class="btn-heart">❤️</button>
+                    </div>
+                    <div class="grid-rating">⭐⭐⭐⭐⭐ <span style="color: var(--text-gray);">7.5</span></div>
+                    <p class="grid-title">GoPro HERO6 4K Action Camera - Black</p>
+                </div>
+                
+                <!-- Items 4-9 (Dummied out structurally identical) -->
+                <div class="grid-item"><div class="grid-img">Tablet</div><div class="grid-price-row"><div><span class="grid-price">$99.50</span><span class="grid-old-price">$1128.00</span></div><button class="btn-heart">❤️</button></div><div class="grid-rating">⭐⭐⭐⭐⭐ <span style="color: var(--text-gray);">7.5</span></div><p class="grid-title">GoPro HERO6 4K Action Camera - Black</p></div>
+                <div class="grid-item"><div class="grid-img">Camera</div><div class="grid-price-row"><div><span class="grid-price">$99.50</span><span class="grid-old-price">$1128.00</span></div><button class="btn-heart">❤️</button></div><div class="grid-rating">⭐⭐⭐⭐⭐ <span style="color: var(--text-gray);">7.5</span></div><p class="grid-title">GoPro HERO6 4K Action Camera - Black</p></div>
+                <div class="grid-item"><div class="grid-img">Phone</div><div class="grid-price-row"><div><span class="grid-price">$99.50</span><span class="grid-old-price">$1128.00</span></div><button class="btn-heart">❤️</button></div><div class="grid-rating">⭐⭐⭐⭐⭐ <span style="color: var(--text-gray);">7.5</span></div><p class="grid-title">GoPro HERO6 4K Action Camera - Black</p></div>
+                
+                <div class="grid-item"><div class="grid-img">Laptop</div><div class="grid-price-row"><div><span class="grid-price">$99.50</span><span class="grid-old-price">$1128.00</span></div><button class="btn-heart">❤️</button></div><div class="grid-rating">⭐⭐⭐⭐⭐ <span style="color: var(--text-gray);">7.5</span></div><p class="grid-title">GoPro HERO6 4K Action Camera - Black</p></div>
+                <div class="grid-item"><div class="grid-img">Smartwatch</div><div class="grid-price-row"><div><span class="grid-price">$99.50</span><span class="grid-old-price">$1128.00</span></div><button class="btn-heart">❤️</button></div><div class="grid-rating">⭐⭐⭐⭐⭐ <span style="color: var(--text-gray);">7.5</span></div><p class="grid-title">GoPro HERO6 4K Action Camera - Black</p></div>
+                <div class="grid-item"><div class="grid-img">Phone</div><div class="grid-price-row"><div><span class="grid-price">$99.50</span><span class="grid-old-price">$1128.00</span></div><button class="btn-heart">❤️</button></div><div class="grid-rating">⭐⭐⭐⭐⭐ <span style="color: var(--text-gray);">7.5</span></div><p class="grid-title">GoPro HERO6 4K Action Camera - Black</p></div>
+            </div>
+            
+            <div class="d-flex justify-content-between align-items-center" style="margin-top: 30px;">
+                <select style="padding: 10px; border-radius: 4px; border: 1px solid var(--border);"><option>Show 10</option></select>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline">&lt;</button>
+                    <button class="btn btn-outline" style="background: var(--border);">1</button>
+                    <button class="btn btn-outline">2</button>
+                    <button class="btn btn-outline">3</button>
+                    <button class="btn btn-outline">&gt;</button>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
-    <footer>
-        <div class="footer-top" onclick="window.scrollTo(0,0)">Back to top</div>
-        <div class="footer-bottom" style="margin-top: 0;">
-            <p>&copy; 1996-2026, Amazon.com, Inc. or its affiliates (Mockup)</p>
+    <!-- Pre-Footer Newsletter -->
+    <div class="newsletter-section">
+        <h3>Subscribe on our newsletter</h3>
+        <p style="color: var(--text-gray); font-size: 14px; margin-top: 5px;">Get daily news on upcoming offers from many suppliers all over the world</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="✉ Email">
+            <button class="btn btn-primary">Subscribe</button>
+        </div>
+    </div>
+
+    <!-- Footer Main -->
+    <footer class="footer-main">
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-logo"><span class="logo-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H18V18H6V6ZM4 4C3.44772 4 3 4.44772 3 5V19C3 19.5523 3.44772 20 4 20H20C20.5523 20 21 19.5523 21 19V5C21 4.44772 20.5523 4 20 4H4ZM9 8H15V10H9V8Z"/></svg></span> Brand</div>
+                <p style="color: var(--text-gray); font-size: 14px; margin-bottom: 20px;">Best information about the company gies here but now lorem ipsum is</p>
+                <div class="d-flex gap-2 text-gray">
+                    <span style="font-size: 20px;">🔵</span><span style="font-size: 20px;">🔵</span><span style="font-size: 20px;">🔵</span><span style="font-size: 20px;">🔵</span><span style="font-size: 20px;">🔵</span>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>About</h4>
+                <ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="#">Categories</a></li><li><a href="#">Blogs</a></li></ul>
+            </div>
+            <div class="footer-col">
+                <h4>Partnership</h4>
+                <ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="#">Categories</a></li><li><a href="#">Blogs</a></li></ul>
+            </div>
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul><li><a href="#">Help Center</a></li><li><a href="#">Money Refund</a></li><li><a href="#">Shipping</a></li><li><a href="#">Contact us</a></li></ul>
+            </div>
+            <div class="footer-col">
+                <h4>For users</h4>
+                <ul><li><a href="#">Login</a></li><li><a href="#">Register</a></li><li><a href="#">Settings</a></li><li><a href="#">My Orders</a></li></ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 15px;">Get app</h4>
+                <div class="app-btn">App Store</div>
+                <div class="app-btn">Google Play</div>
+            </div>
         </div>
     </footer>
+    <div class="footer-bottom container" style="background: none;">
+        <span>© 2026 Ecommerce.</span>
+        <span>🇺🇸 English ⌄</span>
+    </div>
 </body>
 </html>
